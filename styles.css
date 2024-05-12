@@ -2,7 +2,7 @@
 
 :root {
   --dkgrey: #333;
-  --tp-dkgrey: #333333cb;
+  --tp-dkgrey: #333333dd;
   --turquoise: #40e0d0;
   --lt-turquoise: #9fefe7;
   --offwhite: #f4f4f4;
@@ -130,6 +130,11 @@ section {
 
 section h2 {
   color: var(--accent-yellow);
+}
+
+section.cert-description .note {
+  color: var(--accent-green);
+  font-weight: 500;
 }
 
 
