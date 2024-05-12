@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --primary-dkgrey: #333;
+  --tp-dkgrey: #333333e7;
+  --turquoise: #40e0d0;
+  --lt-turquoise: #9fefe7;
+  --offwhite: #f4f4f4;
+  --purple: #693bc7;
+  --accent-yellow: #ffff77;
+  --accent-ltred: #ff7777;
+  --accent-green: #55c555;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--offwhite);
+  font-family: "Space Grotesk", sans-serif;
+  background-image: url(bikerace.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--turquoise);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+
+.projects-home {
+  position: relative;
+  /* margin-top: .3125rem; */
+  padding-top: 3.5px;
+  padding-inline: 5px;
+  background-color: var(--tp-dkgrey);
+  border-radius: .125rem;
+}
+
+.projects-home a svg {
+  fill: var(--offwhite);
+}
+
+.projects-home a svg:hover {
+  fill: var(--turquoise);
+}
+
+
+#container {
+  max-width: 64rem;
+  width: 90%;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+
+#container svg,
+footer {
+  position: relative;
+  z-index: 5;
+  background-color: var(--tp-dkgrey);
+  border-radius: .3125rem;
+}
+
+
+.dot:hover {
+  fill: var(--accent-yellow);
+}
+
+
+#tooltip {
+  position: absolute;
+  z-index: 10;
+  width: 10rem;
+  height: auto;
+  padding: .25rem;
+  color: var(--primary-dkgrey);
+  font-size: .75rem;
+  font-weight: bold;
+  text-align: left;
+  opacity: 0;
+  border-radius: .125rem;
+  pointer-events: none;
+}
+
+#tooltip span {
+  font-size: .625rem;
+}
+
+#tooltip p {
+  margin: 0;
+  padding: 0;
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .1875rem;
+  padding-block: .3125rem;
+  padding-inline: .625rem;
+  font-size: .75rem;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: var(--turquoise);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  filter: brightness(1.5);
+}

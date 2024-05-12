@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+  --primary-dkgrey: #333;
+  --tp-dkgrey: #333333e7;
+  --turquoise: #40e0d0;
+  --lt-turquoise: #9fefe7;
+  --offwhite: #f4f4f4;
+  --purple: #693bc7;
+  --accent-yellow: #ffff77;
+  --accent-ltred: #ff7777;
+  --accent-green: #55c555;
+}
+
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-dkgrey);
+  font-family: "Space Grotesk", sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.videogames-bg {
+  background-image: url('../assets/gaming.jpg');
+}
+
+.videogames-bg:before {
+  opacity: 0.9;
+}
+
+.movies-bg {
+  background-image: url('../assets/filmreel.jpg');
+}
+
+.kickstarter-bg {
+  background-image: url('../assets/crowdfunding.jpg');
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--turquoise);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+}
+
+
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .625rem;
+  padding-bottom: .9375rem;
+  border-bottom: 1px solid var(--tp-dkgrey);
+}
+
+.projects-home {
+  /* margin-top: .3125rem; */
+  padding-top: 3.5px;
+  padding-inline: 5px;
+  background-color: var(--tp-dkgrey);
+  border-radius: .125rem;
+}
+
+.projects-home a svg {
+  fill: var(--offwhite);
+}
+
+.projects-home a svg:hover {
+  fill: var(--turquoise);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.875rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li a {
+  color: var(--purple);
+  /* font-size: .875rem; */
+  /* font-size: clamp(0.75rem, 0.679rem + 0.357vw, 1rem); */
+  /* font-size: clamp(1rem, 0.929rem + 0.357vw, 1.25rem); */
+  font-size: clamp(0.875rem, 0.786rem + 0.238vw, 1rem);
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: underline wavy;
+  text-underline-offset: .3125rem;
+}
+
+nav ul li a:active {
+  color: var(--accent-ltred);
+}
+
+
+header {
+  text-shadow: 1px 0px 0px var(--offwhite);
+}
+
+
+nav ul,
+header p {
+  font-size: clamp(1rem, 0.929rem + 0.357vw, 1.25rem);
+  font-weight: 600;
+}
+
+
+header {
+  position: relative;
+  max-width: 64rem;
+  width: 95%;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(1.5rem, 1.214rem + 1.429vw, 2.5rem);
+}
+
+
+#container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  width: 98%;
+  max-height: 100vh;
+  margin-block: 1.25rem;
+}
+
+
+svg,
+footer {
+  background-color: var(--tp-dkgrey);
+  border-radius: .125rem;
+}
+
+
+.tile:hover {
+  stroke: var(--tp-dkgrey);
+  stroke-width: .1875rem;
+}
+
+
+#tooltip {
+  position: absolute;
+  z-index: 10;
+  padding-block: .4375rem;
+  padding-inline: .625rem;
+  color: var(--offwhite);
+  background-color: var(--primary-dkgrey);
+  font-size: .75rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: .125rem;
+  box-shadow: 1px 1px 5px 1px var(--tp-dkgrey);
+  pointer-events: none;
+}
+
+#tooltip p {
+  margin: 0;
+  padding: 0;
+}
+
+#tooltip span {
+  color: var(--accent-green);
+}
+
+
+section#legend-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+
+footer {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .1875rem;
+  padding-block: .3125rem;
+  padding-inline: .625rem;
+  margin-top: auto;
+  background-color: var(--tp-dkgrey);
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  color: var(--offwhite);
+  font-size: clamp(0.625rem, 0.554rem + 0.357vw, 0.875rem);
+  font-weight: normal;
+}
+
+footer a {
+  color: var(--turquoise);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  filter: brightness(1.5);
+}
