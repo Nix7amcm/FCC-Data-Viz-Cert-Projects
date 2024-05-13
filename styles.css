@@ -123,13 +123,18 @@ section {
   background-color: var(--tp-dkgrey);
   color: var(--offwhite);
   border-radius: .625rem;
-  padding-block: 1.25rem;
-  padding-inline: 1.875rem;
-  text-align: center;
+  padding-block: 1.5625rem;
+  padding-left: 1.875rem;
+  padding-right: 1.5625rem;
+  text-align: left;
 }
 
 section h2 {
   color: var(--accent-yellow);
+}
+
+section p.chart-link {
+  text-align: center;
 }
 
 section.cert-description .note {
