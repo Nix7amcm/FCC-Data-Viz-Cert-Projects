@@ -78,10 +78,16 @@ header,
 main {
   position: relative;
   max-width: 650px;
-  /* width: 100%; */
   width: clamp(45ch, 50%, 75ch);
   padding-inline: 1.25rem;
   margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  header,
+  main {
+    width: 100%;
+  }
 }
 
 header {
