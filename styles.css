@@ -73,16 +73,14 @@ a:active {
   color: var(--accent-ltred);
 }
 
-/* a:visited {
-  color: var(--accent-green);
-} */
-
 
 header,
 main {
   position: relative;
-  width: 650px;
-  max-width: 80%;
+  max-width: 650px;
+  /* width: 100%; */
+  width: clamp(45ch, 50%, 75ch);
+  padding-inline: 1.25rem;
   margin: auto;
 }
 
@@ -129,6 +127,13 @@ section {
   text-align: left;
 }
 
+@media screen and (max-width: 480px) {
+  section {
+    text-align: center;
+    padding-inline: 1.25rem;
+  }
+}
+
 section h2 {
   color: var(--accent-yellow);
 }
@@ -161,7 +166,7 @@ footer {
 footer .fcc-link {
   padding-block: 1.25rem;
   font-size: .875rem;
-  border-bottom: 2px dashed var(--tp-offwhite);  
+  border-bottom: 2px dashed var(--tp-offwhite);
 }
 
 footer .credits {
