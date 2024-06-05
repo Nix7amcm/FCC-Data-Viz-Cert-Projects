@@ -116,7 +116,7 @@ footer .credits {
 
 
 /* ***** TEXT ALIGN ***** */
-/* header,
+header,
 header h1 span {
   text-align: center;
 }
@@ -133,7 +133,7 @@ section {
 
 section p.chart-link {
   text-align: center;
-} */
+}
 
 
 /* ***** FLEX GAP ***** */
