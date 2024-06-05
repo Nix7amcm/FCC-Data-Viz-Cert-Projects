@@ -122,9 +122,11 @@ section p.chart-link {
   text-align: center;
 }
 
+/*
 section {
   text-align: left;
 }
+*/
 
 @media screen and (max-width: 480px) {
   section {
